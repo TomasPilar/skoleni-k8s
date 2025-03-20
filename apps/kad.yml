@@ -3,6 +3,8 @@ kind: Application
 metadata:
   name: kad
   namespace: argo
+  labels:
+    ab: cd
 spec:
   destination:
     namespace: kad
