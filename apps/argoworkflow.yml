@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://gitlab.com/tomkukral/training-model.git
     targetRevision: HEAD
-    path: argo/workflow
+    path: argo/workflows
   destination:
     name: in-cluster
     namespace: argo
