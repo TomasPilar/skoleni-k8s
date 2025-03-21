@@ -1,19 +1,19 @@
-apiVersion: argproj.io/v1alpha1
+apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: prometeus
+  name: prometheus
   namespace: argo
   labels:
-    app: prometeus
+    app: prometheus
 spec:
   project: default
   source:
     repoURL: https://gitlab.com/tomkukral/training-model.git
     targetRevision: HEAD
-    path: prometeus
+    path: prometheus
   destination:
     name: in-cluster
-    namespace: prometeus
+    namespace: prometheus
   syncPolicy:
     syncOptions:
     - Validate=true
